@@ -1,0 +1,48 @@
+include ../components/head/head
+
+doctype html
+html(lang="ru")
+	head
+		+head({
+			"title": "Главная",
+			"description": "Главная страница",
+			"style_page": "styles/index.css"
+})
+
+body.main-page
+	header
+		header-container
+			header-logo
+			form
+				input(type="text" placeholder='Поиск ортоп.товаров, мед. техники' class="search")
+
+			div.adress 
+				img(src="img/content/adress.png")
+				p Нижний Новгород
+			div.time
+				p Ежедневно<br> с 8 до 17
+			div.entrance
+				img(src="img/content/fill.png")
+				a(href="#") Вход
+			div.basket
+				img(src="img/content/basket.png")
+				a(href="#") 2690
+		header-bottom 
+			div.catalog 				
+				a КАТАЛОГ
+				img(src="img/content/arrow.png")
+			div.for-buyers
+				a Покупателям
+			div.delivery
+				a Пункты выдачи
+			div.telephone
+				img(src="img/content/tel.png")
+				p 8-900-345-00-55
+			div.call 
+				a Заказать звонок
+			div.choice
+				a Подбор по заболеванию
+
+	main
+		div.image 
+		h1 Содержимое
