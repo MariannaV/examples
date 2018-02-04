@@ -166,7 +166,35 @@ body.main-page
 			h2 Почему покупают именно у нас?
 			p Мы оптовая компания, поэтому мы держим в рознице невысокие цены		
 	footer
-		p Просто отступы снизу
+		.footer-body
+			nav.footer-menu
+				ul
+					li: a(href='#') О компании
+					li: a(href='#') О магазине
+					li: a(href='#') Отзывы
+					li: a(href='#') Полезные статьи
+					li: a(href='#') Гарантия и возврат
+					li: a(href='#') Оплата и доставка 
+					li: a(href='#') Контакты
+			.footer-info-wrapper
+				callback
+					a(href='#') 8 906 857 64 73
+					span Звонок бесплатный
+				share-links 
+					p Поделиться
+					share-container
+						.link.twitter
+						.link.vk
+						.link.fb
+			payment
+				p Принимаем к оплате
+				payment-container
+					.link.mastercard
+					.link.visa
+		footer-bottom
+			.copyright Lekor, товары для здоровья и красоты. © 2017
+			a(href="#").developer Разработка — mylovelycat
+
 
 script(src="//vk.com/js/api/openapi.js?149")
 script.
