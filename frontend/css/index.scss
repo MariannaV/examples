@@ -408,3 +408,72 @@ footer {
   height: 400px;
 }
 
+section-with-widget {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-left: 42px;
+  padding-right: 42px;
+
+  .text {
+    background-color: white;
+    width: 68.36vw;
+    padding-left: 33px;
+    padding-right: 59px;
+    padding-bottom: 45.8px;
+    padding-top: 41px;
+    h2 {
+      font-size: 24px;
+      color: #4A4A4A;
+      & + p {
+    margin-top: 21px;
+
+      }
+    }
+
+    p {
+    font-size: 14px;
+    color: #4A4A4A;
+    line-height: 24px;
+      & + p {
+
+      margin-top: 25px;
+      }
+    }
+  }
+  
+  .widget {
+    background-color: white;
+    width: 21.49vw;
+  }
+}
+banner{
+  margin-top: 20px;
+  margin-left: 43px;
+  margin-right: 43px;
+  display: block;
+  padding-top: 74px;
+  padding-left: 43px;
+  padding-right: 43px;
+  padding-bottom: 106px;
+  h2 {
+  font-size: 36px;
+  & + p {
+    margin-top: 17px; 
+  }
+  }
+  p {
+  font-size: 20px;
+  }
+  &.pig {
+    background-color: #F9A61A;
+    color: white;
+    background-image: url("../img/content/pig.svg");
+    background-repeat: no-repeat;
+    background-position: right 90px bottom;
+    // background-position-y: bottom;
+    // background-position-x: 62.11vw;
+  }
+}
+
+
