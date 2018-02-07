@@ -1,0 +1,24 @@
+include ../components/head/head
+
+doctype html
+html(lang="ru")
+  head
+    +head({
+      "title": "Главная",
+      "description": "Установите приложение",
+      "style_page": "styles/apps.css"
+})
+
+body.apps-page
+  header
+    header-title Мобильный кассир
+    header-menu
+      a(href="#").kassir Кассиры
+      a(hred="#").operation Операции
+      a(href="#").download.active Скачать приложение для кассира
+  
+  main
+    .content
+      h1 Установите приложение
+
+
