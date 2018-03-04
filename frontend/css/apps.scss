@@ -71,11 +71,10 @@ header {
 
 .apps-page main {
   position: relative;
-  display: flex;
-  align-items: center;
-  padding-top: 100px;
+  display: block;
   background-color: #f5f6f3;
   min-height: calc(100vh - 72px);
+ // padding-left: 501px;
 
   &::before {
     content: "Кружок";
@@ -92,16 +91,72 @@ header {
     top: -131px;
     left: -106px;
   }
-  & > h1 {
-    font-size: 32px;
-    line-height: 41px;
-    font-weight: 700;
-    color: $color-black;
+  &::after {
+    content: "";
+    display : block;
+    background-image: url("../img/content/hand.svg");
+    width: 71.591vh;
+    height: 71.591vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 89px;
+    left: 114px;
   }
+  
 
   & > .content {
-    max-width: 300px;
+    max-width: 385px;
     margin-left: auto;
-    margin-right: 20vw;
+    margin-top: 106px;
+    margin-right: 16vw;
+
+    & > h1 {
+      font-size: 32px;
+      line-height: 41px;
+      font-weight: 700;
+      color: $color-black;
+  
+    }
+
+    & > p { 
+      font-weight: 300;
+     font-size: 16px;
+     line-height: 24px;
+     color: $color-black-light;
+    }
+
+    & > h1 + p {
+      margin-top: 17px;
+
+    }
+     & > p + download-container {
+       margin-top: 30px;
+     }
   }
+}
+
+download-container {
+  display: flex;
+  .google-play, .app-store {
+    display: block;
+    width: 150px;
+    height: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .google-play {
+        background-image: url("../img/content/google-play.svg");
+    
+      }
+  .app-store {
+        
+        background-image: url("../img/content/app-store.svg");
+        
+
+}
+a + a {
+  margin-left: 10.3px;
+
+}
 }
