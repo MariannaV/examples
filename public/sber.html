@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Мобильный кассир</title>
+		<meta charset="utf-8"/>
+		<meta content="Страница авторизации" name="description"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+		<link href="img/favicons/favicon.ico" rel="shortcut icon"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png"/>
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png"/>
+		<link rel="manifest" href="img/favicons/manifest.json"/>
+		<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5"/>
+		<meta name="theme-color" content="#ffffff"/>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;amp;subset=cyrillic" rel="stylesheet"/>
+		<link rel="stylesheet" href="styles/sber.css"/>
+	</head>
+</html>
+<body class="main-page">
+	<block-for-connect> 
+		<h2>Необходимо подключиться к платежному шлюзу Сбербанка</h2>
+		<form>
+			<p>Заполните форму авторизации</p>
+			<input class="login" type="text" placeholder="Логин">
+			<input class="password" type="password" placeholder="Пароль">
+			<button>Подключиться</button>
+		</form>
+	</block-for-connect>
+	<block-for-questions>
+		<article>
+			<h4>Что делать, если нет логина и пароля?</h4>
+			<p>Вам необходимо получить логин и пароль от Сбербанка</p><a href="#">Заполнить заявку--></a>
+		</article>
+		<article>
+			<h4>Что такое платежный шлюз Сбербанка</h4>
+			<p>Это интерфейс для обмена различными видами финансовых документов между ERP-системой Холдинга и автоматизированными банковскими системами</p><a href="#">Заполнить заявку--></a>
+		</article>
+	</block-for-questions>
+</body>

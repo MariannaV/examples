@@ -1,0 +1,133 @@
+@import "helpers/_postcss-reset.scss";
+
+.main-page {
+  display: flex;
+  min-height: 100vh;
+
+  block-for-connect {
+    display: block;
+    padding-top: 21.5vw;
+    padding-left: 77px;
+    padding-right: 58px;
+    padding-bottom: 130px;
+    width: 725px;
+    background-image: url("../img/content/sber-logo.svg"), url("../img/content/sber-name.svg");
+    background-repeat: no-repeat;
+    background-position-x: 78px, 148px;
+    background-position-y: 65px;
+
+    & > h2 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 41px;
+      color: black;
+      width: 450px;
+
+      & + form {
+        margin-top: 33px;
+      }
+    }
+
+    form {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 25px;
+      color: #4f4f4f;
+
+      p {
+        margin-bottom: 41px;
+      }
+
+      button {
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #4b4746;
+        border-radius: 10px;
+        width: 230px;
+        height: 60px;
+        background-color: #ffb647;
+        margin-top: 28px;
+      }
+    }
+
+    input {
+      width: 280px;
+      height: 56px;
+      border-radius: 5px;
+      padding-left: 48px;
+
+      & + input {
+        margin-left: 16px;
+      }
+
+      &.login {
+        background-image: url("../img/content/sber-login.svg");
+        background-size: 16px 18px;
+        background-repeat: no-repeat;
+        background-position: 15px;
+      }
+
+      &.password {
+        background-image: url("../img/content/sber-password.svg");
+        background-size: 16px 18px;
+        background-repeat: no-repeat;
+        background-position: 15px;
+      }
+    }
+  }
+
+  block-for-questions {
+    display: block;
+    padding-top: 67px;
+    padding-left: 52px;
+    padding-right: 32px;
+    width: 330px;
+    background-color: #f5f6f3;
+    border-left: 1px solid #e5e6e3;
+    background-image: url("../img/content/sber-hand.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    & h4 {
+      line-height: 25px;
+      font-size: 18px;
+      color: #393d39;
+      font-weight: 900;
+
+      & + p {
+        margin-top: 3px;
+      }
+    }
+
+    & p {
+      font-weight: 300;
+      line-height: 20px;
+      font-size: 13px;
+      color: #4f4f4f;
+
+      & + a {
+        margin-top: 7px;
+      }
+    }
+
+    & a {
+      display: block;
+      font-weight: 300;
+      line-height: 18px;
+      font-size: 13px;
+      // text-align: left;
+      color: #22a84a;
+    }
+
+    & article + article {
+      margin-top: 64px;
+    }
+  }
+}
+
+
+  
+
+  

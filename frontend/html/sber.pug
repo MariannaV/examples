@@ -1,0 +1,28 @@
+include ../components/head/head
+
+doctype html
+html(lang="ru")
+  head
+    +head({
+      "title": "Мобильный кассир",
+      "description": "Страница авторизации",
+      "style_page": "styles/sber.css"
+})
+
+body.main-page
+  block-for-connect 
+    h2 Необходимо подключиться к платежному шлюзу Сбербанка
+    form
+      p Заполните форму авторизации
+      input(type="text" placeholder="Логин" class="login")
+      input(type="password" placeholder="Пароль" class="password")
+      button Подключиться
+  block-for-questions
+    article
+      h4 Что делать, если нет логина и пароля?
+      p Вам необходимо получить логин и пароль от Сбербанка
+      a(href="#") Заполнить заявку-->
+    article
+      h4 Что такое платежный шлюз Сбербанка
+      p Это интерфейс для обмена различными видами финансовых документов между ERP-системой Холдинга и автоматизированными банковскими системами
+      a(href="#") Заполнить заявку-->
