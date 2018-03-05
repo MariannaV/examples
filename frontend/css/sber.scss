@@ -1,16 +1,19 @@
 @import "helpers/_postcss-reset.scss";
+@import "fonts/fonts.scss";
 
 .main-page {
   display: flex;
   min-height: 100vh;
+  font-family: "Museo Sans", sans-serif;
 
   block-for-connect {
     display: block;
     padding-top: 21.5vw;
+    padding-top: calc(170px + 5vw);
     padding-left: 77px;
     padding-right: 58px;
     padding-bottom: 130px;
-    width: 725px;
+    width: calc(100vw - 330px);
     background-image: url("../img/content/sber-logo.svg"), url("../img/content/sber-name.svg");
     background-repeat: no-repeat;
     background-position-x: 78px, 148px;
@@ -39,6 +42,7 @@
       }
 
       button {
+        display: block;
         font-size: 16px;
         text-align: center;
         letter-spacing: 0.05em;
@@ -83,14 +87,17 @@
     padding-top: 67px;
     padding-left: 52px;
     padding-right: 32px;
+    min-width: 330px;
     width: 330px;
     background-color: #f5f6f3;
     border-left: 1px solid #e5e6e3;
     background-image: url("../img/content/sber-hand.svg");
     background-repeat: no-repeat;
-    background-position: right bottom;
+    // background-position: right bottom;
+    background-position-x: 41px;
+    background-position-y: 498px;
 
-    & h4 {
+    h4 {
       line-height: 25px;
       font-size: 18px;
       color: #393d39;
@@ -101,7 +108,7 @@
       }
     }
 
-    & p {
+    p {
       font-weight: 300;
       line-height: 20px;
       font-size: 13px;
@@ -112,7 +119,7 @@
       }
     }
 
-    & a {
+    a {
       display: block;
       font-weight: 300;
       line-height: 18px;
@@ -121,7 +128,7 @@
       color: #22a84a;
     }
 
-    & article + article {
+    article + article {
       margin-top: 64px;
     }
   }
