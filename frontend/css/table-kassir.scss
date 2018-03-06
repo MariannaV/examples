@@ -1,0 +1,136 @@
+@import "helpers/_postcss-reset.scss";
+@import "fonts/fonts.scss";
+$color-black: #000000;
+$color-black-light: #4f4f4f;
+$color-orange: #ffd87b;
+$color-gray-light: rgba(79, 79, 79, 0.36);
+
+.table-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Museo Sans", sans-serif;
+
+  header {
+    display: flex;
+    background-color: white;
+    padding-left: 7.2vw;
+    padding-right: 7.2vw;
+    z-index: 1;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 23px;
+
+    &-title {
+      font-weight: 700;
+      display: block;
+      font-size: 24px;
+      margin-right: 70px;
+    }
+
+    &-title + header-menu {
+      margin-left: auto;
+      margin-right: 10px;
+    }
+
+    &-menu {
+      display: flex;
+
+      a {
+        text-transform: uppercase;
+        color: $color-gray-light;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+
+        & + a {
+          margin-left: 51px;
+        }
+
+        &.active {
+          color: $color-black-light;
+        }
+      }
+    }
+  }
+}
+
+main {
+  flex-grow: 1;
+  padding-left: 76px;
+  padding-top: 35px;
+  padding-right: 87px;
+  padding-bottom: 63px;
+  background-color: #f5f6f3;
+}
+
+table {
+  width: 100%;
+  // border-color: #e2e3e1;
+
+  th {
+    line-height: 18px;
+    font-size: 13px;
+    color: #a7a7a7;
+    // display: block;
+  }
+
+  td {
+    &.unmount-phone {
+      & > a {
+        display: flex;
+        border: 1px solid #dcdcdc;
+        border-radius: 5px;
+        width: 122px;
+        height: 36px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &::before {
+          content: "НЕ ПРИВЯЗАН";
+          display: block;
+          font-size: 12px;
+          letter-spacing: 0.05em;
+          color: #4f4f4f;
+          font-weight: 700;
+        }
+
+        &.active {
+          background-color: #5fcf80;
+
+          &::before {
+            content: "ПРИВЯЗАН";
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  th,
+  td {
+    text-align: left;
+  }
+}
+
+.name {
+  background-image: url(../img/content/pencil.svg);
+  background-size: 12px 12px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position-x: 117px;
+}
+
+tr {
+  &:not(:first-child) {
+    background-color: white;
+    border: 1px solid #f5f6f3;
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: 1px solid #f5f6f3;
+    }
+  }
+}
