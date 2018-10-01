@@ -1,8 +1,8 @@
 ## Lekor
-https://MariannaV.github.io/lekor/public/
+https://MariannaV.github.io/examples/public/
 
 ## Sberbank (приложения)
-https://MariannaV.github.io/lekor/public/apps.html
+https://MariannaV.github.io/examples/public/apps.html
 
 ## Sberbank (страница авторизации)
-https://MariannaV.github.io/lekor/public/sber.html
+https://MariannaV.github.io/examples/public/sber.html
