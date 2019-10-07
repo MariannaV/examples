@@ -28,6 +28,10 @@ header-container {
   padding-bottom: 15px;
 }
 
+main, footer{
+  display: none;
+}
+
 .adress {
   display: flex;
   align-items: center;
