@@ -137,7 +137,7 @@ gulp.task('default', gulp.series(gulp.parallel(gulp.series('img', 'css'), /* gul
   })
   gulp.watch('frontend/img/**/*.*', gulp.series('img', 'reload'));
   gulp.watch(['frontend/css/*.scss'], gulp.series('css', 'reload'));
-  // gulp.watch(['frontend/js/**/*.js'], gulp.series('scripts', 'js-es', 'reload'));
+  gulp.watch(['frontend/js/**/*.js'], gulp.series('scripts', 'js-es', 'reload'));
   gulp.watch(['frontend/html/*.pug'], gulp.series('html', 'reload'));
 }))
 ));

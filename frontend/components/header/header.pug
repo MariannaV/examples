@@ -1,0 +1,47 @@
+mixin header()
+    header.header
+        header-container
+            header-logo
+            input(type="checkbox" id="show-search")
+            label(class="show-search" for="show-search")
+            form(class="search-form")
+                input(type="text" placeholder='Поиск товаров' class="search")
+            div.address
+                img(src="img/content/adress.png")
+                p Нижний Новгород
+            div.time
+                p Ежедневно<br> с 8 до 17
+            a.entrance(href="#")
+                img(src="img/content/fill.png")
+                p Вход
+            a.basket(href="#")
+                img(src="img/content/basket.png")
+                p 2690
+        header-bottom
+            div.catalog
+                input(type="checkbox" id="show-catalog-menu")
+                .show-catalog-menu
+                    label(for="show-catalog-menu" class="label-show-catalog-menu") КАТАЛОГ
+                    label(for="show-catalog-menu" class="label-close-catalog-menu")
+                ul.catalog-menu
+                    li Медицинская техника
+                    li Ортопедические товары
+                    li Массажёры
+                    li Товары для спорта
+                    li Товары для красоты
+                    li Подарки
+            input(type="checkbox" id="show-header-menu")
+            label(for="show-header-menu" class="show-header-menu")
+            .header-menu-main
+                div.for-buyers
+                    a(href="#") Покупателям
+                div.delivery
+                    a(href="#") Пункты выдачи
+                div.telephone
+                    a(href="tel:89001110055")
+                        img(src="img/content/tel.png")
+                        p 8-900-111-00-55
+                div.call
+                    a Заказать <br>звонок
+                div.choice
+                    a(href="#") Подбор по <br>заболеванию
